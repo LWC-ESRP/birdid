@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>LWC ESRP bird emblem</title>
+  <rect width="64" height="64" rx="14" fill="#123e39"/>
+  <path d="M10 42 24 38 19 17 37 32C38 23 47 21 51 28L58 31 51 34C47 47 29 51 10 42Z" fill="#f5f3df"/>
+  <circle cx="46" cy="29" r="1.8" fill="#123e39"/>
+</svg>

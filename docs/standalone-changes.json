@@ -1,7 +1,7 @@
 {
   "birds.html": {
-    "bytes": 3047,
-    "sha256": "a2adb683826d6c0ca13bbc8123d7f86bde25f843c27f97ef8a197fed93a28a2f"
+    "bytes": 3039,
+    "sha256": "9606732fe7f42a2cc222942014ed16e2457de3eee5ea00e4b241f10564e942b5"
   },
   "assets/css/birds.css": {
     "bytes": 9783,
@@ -14,5 +14,13 @@
   "assets/js/birds-worker.mjs": {
     "bytes": 11563,
     "sha256": "462fd763a851bd9a99f08fa0c9460af968ab2d66b503c4ed93488c497312422c"
+  },
+  "_includes/head.html": {
+    "bytes": 1768,
+    "sha256": "4f4a8a964538b07431de70fc402d3d05d5c08c2863e22eddee7477dbcd103b44"
+  },
+  "assets/images/favicon.png": {
+    "bytes": 12523,
+    "sha256": "13aa5fdbcabe61b82a4dcb7cd1a8d19a8d62a8cb510994724d5419a8ff8f1819"
   }
 }
