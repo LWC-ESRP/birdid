@@ -1,0 +1,12 @@
+{
+  "name": "birdid",
+  "private": true,
+  "scripts": {
+    "check:assets": "node script/check-assets.mjs",
+    "test": "npm run check:assets && node --test tests/birds-core.mjs tests/birds-motion.mjs tests/birds-scheduler.mjs tests/birds-scopes-worker.mjs",
+    "test:browser": "node tests/birds-browser.cjs && node tests/birds-scopes-browser.cjs && node tests/birds-responsive-browser.cjs && node tests/birds-recovery-browser.cjs && node tests/birds-scheduling-browser.cjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

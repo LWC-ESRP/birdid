@@ -1,0 +1,17 @@
+.DS_Store
+.env
+.env.*
+.dev.vars
+.bundle/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+_site/
+vendor/
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+output/
+test-results/
+playwright-report/

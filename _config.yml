@@ -1,0 +1,23 @@
+title: Matthew Feil
+lang: en
+description: Local, on-device bird detection and identification.
+url: ""
+baseurl: ""
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# The model manifest intentionally retains the original /assets/ URLs.
+# Serve the generated site at the origin root (localhost or a custom domain).
+exclude:
+  - README.md
+  - docs
+  - script
+  - tests
+  - package.json
+  - package-lock.json
+  - node_modules
+  - vendor
+  - .bundle
+

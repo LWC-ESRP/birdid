@@ -1,0 +1,271 @@
+{
+  "sourceRepository": "https://github.com/MatthewFeil/MatthewFeil.github.io",
+  "sourceCommit": "085201b3dbdb1169af7bc51c16a98dfbe7eb5fa4",
+  "sourceWorkingTreeClean": true,
+  "files": {
+    "Gemfile": {
+      "bytes": 114,
+      "sha256": "453b0e9c8f76c92d1456c8d5278dc3017c13c9a622c136f2e349b1cc1ccefbf4"
+    },
+    "Gemfile.lock": {
+      "bytes": 4579,
+      "sha256": "ab183e7b1b72a164a558655bc0c29d2320b84f478a4b71a933e76a79f43ac5e4"
+    },
+    "_includes/custom-head.html": {
+      "bytes": 321,
+      "sha256": "17b5c17a0b8bd000e895a1ce44ef78bb308ec3f0fa98bf4fb744b4265aff3ee6"
+    },
+    "_includes/footer.html": {
+      "bytes": 566,
+      "sha256": "7ec5bd9ee26cceb7b7d4cc755799b975358e072571c3b519538467b9642af3d3"
+    },
+    "_includes/google-analytics.html": {
+      "bytes": 522,
+      "sha256": "f1db6549ed9f80e0263710f786c83dd8f62a1841335600989243556460b8c936"
+    },
+    "_includes/head.html": {
+      "bytes": 1613,
+      "sha256": "2700a5bc819edbcf794736882fc2999d9da851a0852e31db6fd75e9647d54291"
+    },
+    "_includes/header.html": {
+      "bytes": 2522,
+      "sha256": "46bb96a68be9aafacd18b433ab3f3debc68c60affeaeb51e16e4382e60669ce0"
+    },
+    "_includes/keyboard-navigation.html": {
+      "bytes": 194,
+      "sha256": "698a2e66bde58584a0d794cef051cb177f088b7eebc67fa05347c4d7b7651469"
+    },
+    "_layouts/base.html": {
+      "bytes": 524,
+      "sha256": "4c48dbe9dcbf58ea3484208c3f4fd81ef071a3706aaef9d55395ba06b7d0eb82"
+    },
+    "assets/css/analytics-consent.css": {
+      "bytes": 3237,
+      "sha256": "c392480aa38505143c2898d8ba853e81f8083b0a7844a1c75f8cf9b89bc89e28"
+    },
+    "assets/css/birds.css": {
+      "bytes": 9779,
+      "sha256": "6f52db15dbd5810881b9a6da17fe8eed8eee8a77643d7148a506f9805e6552c6"
+    },
+    "assets/css/fonts.css": {
+      "bytes": 588,
+      "sha256": "e64afaf3d690e25d9f39d1e31ac96bfcc55621aee4546e7b99c3759fc64bdb8b"
+    },
+    "assets/css/keyboard-navigation.css": {
+      "bytes": 813,
+      "sha256": "97ae64343b5cd899985cc9022944237140082c469bffe3dd57c65937f2cff4b8"
+    },
+    "assets/css/style.scss": {
+      "bytes": 38388,
+      "sha256": "e91dab9cb98e36e904e4e7e82318dbcc2d6072944970424d47c3fa136f746c45"
+    },
+    "assets/fonts/OFL-Archivo-Black.txt": {
+      "bytes": 4398,
+      "sha256": "4cafdbbd100af37a23805af09b7068e4daafb4516dc3d6d52436f4a9d7b4c0d3"
+    },
+    "assets/fonts/OFL-Familjen-Grotesk.txt": {
+      "bytes": 4546,
+      "sha256": "3775f2441de413d148650ae0c5688c1065fe9db6cfc54d99eeeb92d97f832cc4"
+    },
+    "assets/fonts/archivo-black-latin-400-normal.woff2": {
+      "bytes": 18604,
+      "sha256": "25f33e61cf995abd6be62931cf03bf427286259177b43618cc410ee0157cfd30"
+    },
+    "assets/fonts/familjen-grotesk-latin-wght-italic.woff2": {
+      "bytes": 20512,
+      "sha256": "ec90f52eecdedf9b76573c22889692eb933f8423c6027941e32f670212aec6d4"
+    },
+    "assets/fonts/familjen-grotesk-latin-wght-normal.woff2": {
+      "bytes": 18916,
+      "sha256": "414d5dfe5f3d02a327f99ad9121bd77ae931b5b754565578fb0ce4fede2de268"
+    },
+    "assets/images/favicon.png": {
+      "bytes": 16558,
+      "sha256": "9f58799a37a20c29fbf33abf47ed627e79bc30e9b488adeb634227497bc2ad8d"
+    },
+    "assets/js/birds-core.mjs": {
+      "bytes": 12684,
+      "sha256": "3fac7a90038d8a0a95a33a291a1937abe6f20acda4a68b5df14693214094fe3f"
+    },
+    "assets/js/birds-motion-worker.mjs": {
+      "bytes": 782,
+      "sha256": "50e169e14425afe28c411b73ab4a901e94f59a2d1fb5275c8f801bf1dddd2036"
+    },
+    "assets/js/birds-motion.mjs": {
+      "bytes": 5362,
+      "sha256": "ad3349614d5b06a159e3093edaa4a87d8d66103a547418ee8d481ba1305511f5"
+    },
+    "assets/js/birds-scheduler.mjs": {
+      "bytes": 1835,
+      "sha256": "6cd81691b8b5fbafb404d2490f853b836c4c0f8c8afbb7f4d8a856f590edb43e"
+    },
+    "assets/js/birds-worker.mjs": {
+      "bytes": 11399,
+      "sha256": "7c9579db4d08381b8a0cec415f4495530c48f4c3a57e9a587b56753817f95e05"
+    },
+    "assets/js/birds.js": {
+      "bytes": 21396,
+      "sha256": "a80505519326739e0f92ae56bc59f525dca75335c64aa911617cefdb913f5a72"
+    },
+    "assets/js/keyboard-navigation.js": {
+      "bytes": 2929,
+      "sha256": "d6b313145dab52d2aa3acab147760e38ed2ae55a2420a43eb482193649c62e0e"
+    },
+    "assets/js/site.js": {
+      "bytes": 12413,
+      "sha256": "9e3b4c6ca74e764c4a288010f28c13232ca8f9714aa1b4565f86c6bf50f2d89a"
+    },
+    "assets/js/vendor/onnxruntime/LICENSE": {
+      "bytes": 1073,
+      "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c"
+    },
+    "assets/js/vendor/onnxruntime/VERSION": {
+      "bytes": 103,
+      "sha256": "78601d10602f9aa1118ce9363a2e917d70772e26317f527f82f7caa96bd34bc4"
+    },
+    "assets/js/vendor/onnxruntime/ort-wasm-simd-threaded.asyncify.mjs": {
+      "bytes": 53057,
+      "sha256": "3d1c85995364bb643302fc6fd877a0c3ba5ae72401815e0f24828a53d9191e28"
+    },
+    "assets/js/vendor/onnxruntime/ort-wasm-simd-threaded.asyncify.wasm": {
+      "bytes": 26781914,
+      "sha256": "39f9f0894d478800487ed9f7dbe92618498db320cf55c8e3d89adff8dce658da"
+    },
+    "assets/js/vendor/onnxruntime/ort.webgpu.bundle.min.mjs": {
+      "bytes": 117732,
+      "sha256": "0730816731ce2cdfb06f273da065d4a1c7091eb9d1756a83b2916c8a89d015e2"
+    },
+    "assets/models/birds/SOURCES.md": {
+      "bytes": 1256,
+      "sha256": "8e839bdc6c3ada6d821aaf21bdb61bc9c3e2d4b8ecb0bbd0a396765d2d261c26"
+    },
+    "assets/models/birds/efficientnet-b2/LICENSE": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "assets/models/birds/efficientnet-b2/MODEL_CARD.md": {
+      "bytes": 4479,
+      "sha256": "61d60c6ab2989f68281fd3ea0dbb9c3ab796a0ce49a4e3810559ec2b87c576da"
+    },
+    "assets/models/birds/efficientnet-b2/config.json": {
+      "bytes": 31208,
+      "sha256": "41d4115ac70d97ad824b35b49aff71cf03f308d4db8868b35a54471f5e48ec58"
+    },
+    "assets/models/birds/efficientnet-b2/model.onnx": {
+      "bytes": 33741738,
+      "sha256": "0e8d91d99a53b7a24d992926868ecc744f0e73433bab9720effb252b2fcc14ed"
+    },
+    "assets/models/birds/efficientnet-b2/preprocessor_config.json": {
+      "bytes": 495,
+      "sha256": "e5c1c31bc1aa9353d711de56a264baca5e0ebfedb599475c5c012680aaf7a0fe"
+    },
+    "assets/models/birds/manifest.json": {
+      "bytes": 61684,
+      "sha256": "9705c8b05734f969875e6bab4a36ffdfe245fd0492a84cb198f6326016509374"
+    },
+    "assets/models/birds/yolox-nano/LICENSE": {
+      "bytes": 11371,
+      "sha256": "0ec3668d3274bcf29e8a29e9576d5a2cd96fc78d3c5bec4387355a796e5d9088"
+    },
+    "assets/models/birds/yolox-nano/model.onnx": {
+      "bytes": 3659407,
+      "sha256": "c789161ed43c8269fcd4e67c67eeeb4e80c622da2eb296a20bc6007bd18a0b7d"
+    },
+    "birds.html": {
+      "bytes": 3009,
+      "sha256": "370c1d8338e547a4ef65e31b62f64d05eeaec1d7f40ea961b39ae18828c3ee10"
+    },
+    "docs/birds-improvement-roadmap.md": {
+      "bytes": 15587,
+      "sha256": "d060afac09a21f14a6699ef86e96c3c4d5443b107d87b8b055784a883bc84edb"
+    },
+    "docs/birds-models.md": {
+      "bytes": 24767,
+      "sha256": "7e95fcc1568240bec18c35cba6d3c6448ca9414e3fa6c562f59895bc52e7fa86"
+    },
+    "script/birds/evaluate.py": {
+      "bytes": 2576,
+      "sha256": "adbbdf1ce609eb0727d9b9cccbee68fa8e4aa76709842a15e34c5b914ccdcf5b"
+    },
+    "script/birds/export.py": {
+      "bytes": 1287,
+      "sha256": "59284f421cf8be849f44b5a9b2919c98bdd277f8c4ef3f83e42e94101d7160ef"
+    },
+    "script/birds/quantize.py": {
+      "bytes": 967,
+      "sha256": "c6bffb140c32d828e7a7f02612b8ca291bc399401a85d13916ef8e8a82337f28"
+    },
+    "script/birds/requirements.txt": {
+      "bytes": 49,
+      "sha256": "630ab1dd49b263ef2007ed398707a275baa4be85add6908a91b8b1a420da2805"
+    },
+    "script/build": {
+      "bytes": 72,
+      "sha256": "72245456b35ddb80489e1a489e6a8a3918b0639b61b9391cec91aca90a367884"
+    },
+    "script/server": {
+      "bytes": 36,
+      "sha256": "bf8e71099eb1d4be35a52ee19f1ff7153e91ff224f6558ceb99182c1c4653c8e"
+    },
+    "tests/birds-browser.cjs": {
+      "bytes": 8112,
+      "sha256": "479211a90974c834115ca686588dd710ec7f9db1c4b18ef88a8f4336672f49ec"
+    },
+    "tests/birds-continuity-browser.cjs": {
+      "bytes": 5222,
+      "sha256": "e80a8cbe9edb5d02ca5a47f7e874082f8a8221199b68c62eac7fd51078a84055"
+    },
+    "tests/birds-core.mjs": {
+      "bytes": 10865,
+      "sha256": "52eaf51c4f2026823ad9e8e9d6e931c7084b30d7085821ad5d96cfc1836c990e"
+    },
+    "tests/birds-distance-browser.cjs": {
+      "bytes": 4123,
+      "sha256": "a8dd79475df7c17211f84a9ad81cb9086e4e60b3d8233b5ffddd256b88989af3"
+    },
+    "tests/birds-models-browser.cjs": {
+      "bytes": 3190,
+      "sha256": "b316378c11cd6fee19efe04187bbebe19f13bbfcf86d84dcfa863197cd864a69"
+    },
+    "tests/birds-motion.mjs": {
+      "bytes": 4151,
+      "sha256": "e8a9f67d51e447b05ce14a9535f0fb9105a41350db4c64fdaa49948be9fcd9e4"
+    },
+    "tests/birds-recovery-browser.cjs": {
+      "bytes": 8606,
+      "sha256": "442e2596e76c58bc5b8dc46902db9c8066a372d0c472433750d691f747d7050b"
+    },
+    "tests/birds-region-browser.cjs": {
+      "bytes": 3083,
+      "sha256": "1006ad8c7f9db48af484a2f69cabe6f7f3ef65bec24b0e75b81fd77230e8ab05"
+    },
+    "tests/birds-responsive-browser.cjs": {
+      "bytes": 8067,
+      "sha256": "8086ccd31c6c8d38b2b931b32659c166ce33bf9e3e9e7071f2d0a9669dd9342e"
+    },
+    "tests/birds-scheduler.mjs": {
+      "bytes": 2094,
+      "sha256": "8954fd74842bd68498761fd027d931017586989da602045dc6b3a04fda6b0538"
+    },
+    "tests/birds-scheduling-browser.cjs": {
+      "bytes": 6712,
+      "sha256": "bcf546f26913cd3261eaa2b5c751e7aaf204cba5ed2ae939137319be2e879d1e"
+    },
+    "tests/birds-scopes-browser.cjs": {
+      "bytes": 6880,
+      "sha256": "86fb324fc4eb79fead46b2411cf7c5d1e2b5a1fbebd03dbab09249327a0bc22b"
+    },
+    "tests/birds-scopes-worker.mjs": {
+      "bytes": 3560,
+      "sha256": "aca7faa569a8544d8a357ec3cff3a2e2f955c95ea5c2a58dc253fd6dfe31a495"
+    },
+    "tests/birds-small-browser.cjs": {
+      "bytes": 3650,
+      "sha256": "dbabb94394ecd4325d036938a2d5071887ac91137035141746d5450aeedcf7d1"
+    },
+    "tests/birds-tracking-browser.cjs": {
+      "bytes": 4230,
+      "sha256": "082f2dfe32f123aca0ab15ab3a8cb182a6921972dc99231e438d47f36d19499a"
+    }
+  }
+}
