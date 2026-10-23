@@ -6,14 +6,16 @@ const root = new URL('../', import.meta.url);
 const read = path => readFileSync(new URL(path, root));
 const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
 const snapshot = JSON.parse(read('docs/source-snapshot.json'));
+const changes = JSON.parse(read('docs/standalone-changes.json'));
 let count = 0;
 for (const [path, original] of Object.entries(snapshot.files)) {
   // Tests and documentation may be adapted for this standalone repository.
   if (!path.startsWith('assets/') && path !== 'birds.html' &&
       !path.startsWith('_includes/') && !path.startsWith('_layouts/')) continue;
+  const expected = changes[path] || original;
   const bytes = read(path);
-  assert.equal(bytes.length, original.bytes, `${path}: source size changed`);
-  assert.equal(sha256(bytes), original.sha256, `${path}: source checksum changed`);
+  assert.equal(bytes.length, expected.bytes, `${path}: recorded size changed`);
+  assert.equal(sha256(bytes), expected.sha256, `${path}: recorded checksum changed`);
   count++;
 }
 const manifest = JSON.parse(read('assets/models/birds/manifest.json'));
@@ -22,5 +24,5 @@ for (const model of [manifest.detector, ...manifest.options.map(option => option
   const bytes = read(model.url.slice(1));
   assert.equal(sha256(bytes), model.sha256, `${model.url}: model integrity failed`);
 }
-console.log(`${count} app, shared UI, model, and runtime files match the website source; model checksums match the manifest.`);
-console.log('This checks the original copy. Update docs/source-snapshot.json deliberately when changing app assets.');
+for (const path of Object.keys(changes)) assert.ok(snapshot.files[path], `${path}: override lacks original provenance`);
+console.log(`${count} app, shared UI, model, and runtime files match the source snapshot or recorded standalone changes; model checksums match the manifest.`);

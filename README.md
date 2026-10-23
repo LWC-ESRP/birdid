@@ -1,9 +1,23 @@
 # Bird identifier
 
 Standalone copy of the bird identification app at `matthewfeil.com/birds/`.
-The original website repository is unchanged. The camera UI, tracking, scheduling,
-species scopes, model preprocessing, classification, and recovery code are copied
-without changes.
+The original website repository is unchanged. Tracking, scheduling, species
+scopes, model preprocessing, classification, and recovery retain the original
+behavior. Standalone changes add prefix-safe model downloads and a version label.
+
+## Research test site
+
+Open **[BirdID](https://matthewfeil.com/birdid/)** to test the app.
+
+The public GitHub Pages site deploys automatically from `main` using
+`.github/workflows/pages.yml`. The deployment URL is shown in the repository's
+**Settings → Pages** and each successful Actions deployment. Testers only need
+the HTTPS link and camera permission; no repository checkout or installation.
+
+The toolbar displays the app version and the deployed commit's first seven
+characters, for example `v0.1.0 · abc1234`. Every deployment updates the commit
+label automatically. Change `app_version` in `_config.yml` for a new app version.
+Plain `jekyll serve` uses the label `local`.
 
 ## Run locally
 
@@ -54,19 +68,25 @@ There is no service worker or guaranteed offline install.
 ## Build and host
 
 ```sh
-JEKYLL_ENV=production bundle exec jekyll build --destination "$PWD/_site"
+JEKYLL_ENV=production sh script/build --destination "$PWD/_site"
 ```
 
-Serve the **contents of `_site/` at the origin root**, with HTTPS, and support
+Serve the **contents of `_site/`**, with HTTPS, and support
 `.mjs` as JavaScript and `.wasm` as `application/wasm`. Keep every model and runtime
 binary in the build. No server-side application process is needed after building.
 
-The original manifest uses absolute `/assets/models/birds/...` URLs, and the
-original core validates those paths. Hosting under a prefix such as
-`username.github.io/birdid/` requires a separate path-portability change; merely
-setting Jekyll `baseurl` does not make that work. Root hosting on localhost or a
-dedicated domain preserves the original code. No domain or deployment settings
-were copied from the website, and nothing has been published.
+The manifest retains canonical `/assets/models/birds/...` URLs and validation.
+The worker resolves model downloads relative to this app's root so both origin
+root hosting and a project prefix such as `/birdid/` work. The Pages workflow
+obtains its origin and prefix from GitHub, then builds the matching links.
+For a local build matching a project site:
+
+```sh
+SITE_URL=https://example.github.io SITE_BASEURL=/birdid \
+  JEKYLL_ENV=production sh script/build
+```
+
+The public test site has no authentication, feedback form, or result collection.
 
 ## Verify
 
@@ -76,11 +96,11 @@ With Node.js 20 or later:
 npm test
 ```
 
-This checks the copied app assets against their recorded source checksums, checks
+This checks the app assets against their recorded source or standalone checksums, checks
 both ONNX binaries against the model manifest, and runs the geometry, tracking,
 motion, scheduling, and worker scope regression suites. After intentional app
-development, update the snapshot checksums deliberately or run the individual
-regression suites independently of the one-time copy check.
+development, record changed app assets in `docs/standalone-changes.json` while
+preserving the original source snapshot.
 
 For the camera lifecycle, responsive UI, recovery, scheduling, and scope browser
 checks, build `_site/` first and provide Playwright and an installed Chromium:
@@ -119,7 +139,9 @@ field identification accuracy.
 
 `docs/source-snapshot.json` records the original website commit and SHA-256/size
 of every copied file. The source working tree was clean. All runtime app/model
-files and shared rendering dependencies were copied byte for byte. Browser tests
+files and shared rendering dependencies were initially copied byte for byte.
+`docs/standalone-changes.json` records the subsequent version-label and hosting
+changes without rewriting that original provenance. Browser tests
 were adjusted to default to this repo's `_site/` and to check the standalone root
 and absence of analytics instead of unrelated website pages. The new files are
 the app-only Jekyll config, root redirect, run/test instructions, ignore rules,

@@ -227,7 +227,7 @@ function loadModel() {
   clearAnalysis();const token=generation;
   setLoading(true);
   setStatus('Loading full precision model…');
-  try {worker=new Worker(new URL('./birds-worker.mjs?v=20261013-scopes1',import.meta.url),{type:'module'});} catch {fail('Local analysis could not start.');return;}
+  try {worker=new Worker(new URL('./birds-worker.mjs?v=20261022-pages1',import.meta.url),{type:'module'});} catch {fail('Local analysis could not start.');return;}
   worker.onmessage=({data})=>{
     if(token!==generation) return;
     if(data.type==='progress') setStatus(data.message);

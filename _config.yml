@@ -3,13 +3,14 @@ lang: en
 description: Local, on-device bird detection and identification.
 url: ""
 baseurl: ""
+app_version: "0.1.0"
+build_revision: "local"
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# The model manifest intentionally retains the original /assets/ URLs.
-# Serve the generated site at the origin root (localhost or a custom domain).
+# Workers resolve canonical model paths within the configured hosting prefix.
 exclude:
   - README.md
   - docs

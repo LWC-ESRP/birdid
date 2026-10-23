@@ -29,6 +29,7 @@ const server = http.createServer((req,res) => {
       await page.locator('.birds-start').waitFor();
       assert.match(await page.locator('.birds-availability').textContent(),/Experimental/);
       assert.equal(await page.locator('.birds-toolbar').isVisible(),true);
+      assert.match(await page.locator('.birds-version').innerText(),/^v\d+\.\d+\.\d+ · (local|[a-f0-9]{7})$/);
       assert.equal(await page.locator('.birds-stop').textContent(),'Start camera');
       assert.equal(await page.locator('.birds-stop').getAttribute('aria-pressed'),'false');
       assert.equal(await page.locator('.site-header').isVisible(),false);
@@ -40,6 +41,7 @@ const server = http.createServer((req,res) => {
       if(screenshots){fs.mkdirSync(screenshots,{recursive:true});await page.screenshot({path:path.join(screenshots,`idle-${width}.png`),fullPage:true});}
       await page.locator('.birds-start').click();
       await page.waitForFunction(()=>document.body.classList.contains('birds-running'));
+      assert.equal(await page.locator('.birds-version').isVisible(),true);
       await page.waitForFunction(()=>document.querySelector('.birds-warning-text').textContent.includes('disabled'));
       assert.equal(await page.locator('.birds-overlays').locator('*').count(),0);
       assert.equal(await page.locator('.site-header').isVisible(),false);

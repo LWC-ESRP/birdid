@@ -25,7 +25,6 @@
 .birds-launch-action .birds-message { max-width: 48ch; margin-top: .75rem; color: #bdbdbd; font-size: .85rem; line-height: 1.5; }
 .birds-launch-notes { width: min(100%, 46ch); }
 .birds-launch-notes .birds-availability { max-width: 62ch; font-size: .78rem; line-height: 1.5; }
-.birds-launch-notes .birds-first-load { margin-top: .45rem; color: #bdbdbd; font-size: .78rem; line-height: 1.5; }
 .birds-app button { min-height: 44px; padding: .7rem 1rem; border: 1px solid #f6f6f6; border-radius: 0; font: 700 .85rem var(--font-ui); letter-spacing: .04em; cursor: pointer; transition: background-color .12s ease-out, border-color .12s ease-out; }
 .birds-app button:disabled { opacity: .55; cursor: wait; }
 .birds-stop { color: #f6f6f6; background: #141414; flex: 0 0 auto; max-width: 45%; white-space: normal; overflow-wrap: anywhere; }
@@ -45,6 +44,7 @@
   .birds-controls { flex: 1 1 9rem; }
 }
 .birds-status { flex: 0 0 auto; margin: 0; white-space: normal; overflow-wrap: anywhere; font-size: .9rem; line-height: 1.3; }
+.birds-version { margin: 0; color: #bdbdbd; font-size: .75rem; line-height: 1.3; font-variant-numeric: tabular-nums; }
 .birds-app [hidden] { display: none !important; }
 body:has([data-birds-app]) { min-width: 0; overflow: hidden; }
 body:has([data-birds-app]) > .site-header, body:has([data-birds-app]) > .site-footer, body:has([data-birds-app]) > .skip-link { display: none; }

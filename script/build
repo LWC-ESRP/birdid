@@ -2,5 +2,10 @@
 
 set -e
 
-echo "Building the site..."
-bundle exec jekyll build
+# Generate deployment metadata without modifying tracked configuration.
+build_config_dir=$(mktemp -d)
+build_config="$build_config_dir/build.yml"
+trap 'rm -f "$build_config"; rmdir "$build_config_dir"' EXIT HUP INT TERM
+export BIRDS_BUILD_REVISION="${GITHUB_SHA:-$(git rev-parse HEAD)}"
+ruby -rjson -e 'puts JSON.generate({"build_revision" => ENV.fetch("BIRDS_BUILD_REVISION")[0,7], "url" => ENV.fetch("SITE_URL", ""), "baseurl" => ENV.fetch("SITE_BASEURL", "")})' > "$build_config"
+bundle exec jekyll build --config "_config.yml,$build_config" "$@"

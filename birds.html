@@ -6,7 +6,7 @@ no_analytics: true
 noindex: true
 sitemap: false
 extra_css:
-  - /assets/css/birds.css?v=20261013-controls1
+  - /assets/css/birds.css?v=20261022-version1
 ---
 <section class="birds-app" aria-labelledby="birds-title" data-birds-app>
   <div class="birds-stage">
@@ -29,7 +29,6 @@ extra_css:
       </div>
       <div class="birds-launch-notes">
         <p class="birds-availability" id="birds-availability">Experimental identification of 52 common North American species.</p>
-        <p class="birds-first-load">First start may take a moment while local models load.</p>
       </div>
       <noscript>Enable JavaScript to use the camera.</noscript>
     </div>
@@ -45,6 +44,7 @@ extra_css:
           <span class="birds-rates"></span>
           <span class="birds-device"></span>
         </div>
+        <p class="birds-version" aria-label="App version">v{{ site.app_version | escape }} · {{ site.build_revision | escape }}</p>
       </div>
       <div class="birds-controls">
         <select id="birds-scope" class="birds-scope" aria-label="Species scope" aria-describedby="birds-availability">
@@ -57,4 +57,4 @@ extra_css:
     </div>
   </div>
 </section>
-<script type="module" src="{{ '/assets/js/birds.js?v=20261013-copy1' | relative_url }}"></script>
+<script type="module" src="{{ '/assets/js/birds.js?v=20261022-pages1' | relative_url }}"></script>

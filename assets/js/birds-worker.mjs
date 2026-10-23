@@ -10,7 +10,10 @@ function applyScope() {
   previous=previous.map(({box,cacheId,lastDetected})=>({box,cacheId,lastDetected}));
 }
 async function modelBytes(model) {
-  const response=await fetch(`${model.url}?v=${model.sha256.slice(0,12)}`,{cache:'force-cache'});
+  // Manifest paths stay canonical; resolve them within this app's hosting prefix.
+  const url=new URL(`../../${model.url.slice(1)}`,import.meta.url);
+  url.searchParams.set('v',model.sha256.slice(0,12));
+  const response=await fetch(url,{cache:'force-cache'});
   if(!response.ok) throw new Error('A local model could not be downloaded.');
   const bytes=await response.arrayBuffer();
   const digest=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),x=>x.toString(16).padStart(2,'0')).join('');

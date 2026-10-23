@@ -1,0 +1,18 @@
+{
+  "birds.html": {
+    "bytes": 3047,
+    "sha256": "a2adb683826d6c0ca13bbc8123d7f86bde25f843c27f97ef8a197fed93a28a2f"
+  },
+  "assets/css/birds.css": {
+    "bytes": 9783,
+    "sha256": "f83cf24ac55051309f64a8dda23e6516d6395b3110fba093522b8e63e41424da"
+  },
+  "assets/js/birds.js": {
+    "bytes": 21395,
+    "sha256": "49a216234419f21b179035ebd72a29c70a9c23ea3073a13c203dab2599e3f484"
+  },
+  "assets/js/birds-worker.mjs": {
+    "bytes": 11563,
+    "sha256": "462fd763a851bd9a99f08fa0c9460af968ab2d66b503c4ed93488c497312422c"
+  }
+}

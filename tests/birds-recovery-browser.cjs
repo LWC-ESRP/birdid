@@ -36,7 +36,9 @@ const motion=`self.onmessage=({data})=>{if(data.type==='frame')postMessage({type
       navigator.mediaDevices.getUserMedia=async()=>{const c=document.createElement('canvas');c.width=640;c.height=480;const x=c.getContext('2d');const stream=c.captureStream(30),timer=setInterval(()=>x.fillRect(0,0,640,480),33);stream.getTracks().forEach(t=>{const stop=t.stop.bind(t);t.stop=()=>{clearInterval(timer);stop();};});return stream;};
     });
     await page.goto(`http://127.0.0.1:${server.address().port}/birds/`);await page.locator('.birds-start').click();
-    await page.waitForFunction(()=>motionReplies>3 && modelReplies>2);
+    // Measure after diagnostics and fonts settle; they can add a readout row.
+    await page.waitForFunction(()=>motionReplies>3 && modelReplies>2 && document.querySelector('.birds-device').textContent);
+    await page.evaluate(()=>document.fonts.ready);
     const toolbarHeight=(await page.locator('.birds-toolbar').boundingBox()).height;
     const initial=await page.evaluate(()=>{window.failOnce=true;return motionStarts;});
     await page.waitForFunction(n=>motionStarts>n && document.querySelector('.birds-warning').hidden,initial);
