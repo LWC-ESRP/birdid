@@ -7,7 +7,7 @@
 .jekyll-metadata
 .sass-cache/
 _site/
-vendor/
+/vendor/
 node_modules/
 __pycache__/
 *.pyc
