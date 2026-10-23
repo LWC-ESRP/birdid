@@ -7,7 +7,7 @@ behavior. Standalone changes add prefix-safe model downloads and a version label
 
 ## Research test site
 
-Open **[BirdID](https://matthewfeil.com/birdid/)** to test the app.
+Open **[BirdID](https://lwc-esrp.github.io/birdid/)** to test the app.
 
 The public GitHub Pages site deploys automatically from `main` using
 `.github/workflows/pages.yml`. The deployment URL is shown in the repository's
